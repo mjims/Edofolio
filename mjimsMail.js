@@ -1,4 +1,3 @@
-<script>
 function sendEmail(sender,dest,sujet,corps,pass) {
   	Email.send({
     Host: "smtp.elasticemail.com",
@@ -12,7 +11,7 @@ function sendEmail(sender,dest,sujet,corps,pass) {
     message => alert(message)
   );
 }
-function codegenerer() {
+function codegenerer(){
 	const caraters='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz';
 	let code='';
 	for (var i = 0; i < 4; i++) {
@@ -23,4 +22,4 @@ function codegenerer() {
 	code+='DEM'+timestamp;
 	return code;
 }
-</script>
+
