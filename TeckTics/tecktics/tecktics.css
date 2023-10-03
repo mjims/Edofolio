@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900|Montserrat:200,300,400,400i,500,500i,600,700,800,900|Open+Sans:300,400,400i,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+header {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbarEd {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    height:80px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+    
+}
+.navbarEd .logo{
+    width: 100px;
+    height: 50px;
+    margin-top:20px;
+}
+.navbarEd-list{
+   width: 70%;
+}
+
+.nav-listEd {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 9999;
+}
+
+.nav-listEd li {
+    margin-right: 0px;
+    padding: 5px;
+    margin-right: 20px;
+    background: transparent;
+    color: #242424;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Lato", sans-serif !important;
+    text-transform: uppercase;
+    padding: 0px;
+    letter-spacing: 0.95px;
+    line-height: 50px;
+    -webkit-transition: all 150ms linear;
+    -o-transition: all 150ms linear;
+    transition: all 150ms linear;
+
+}
+
+
+.nav-listEd li:last-child {
+    margin-right: 0;
+   
+}
+
+.nav-listEd a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+}
+.nav-listEd .active{
+     color: #18ba60 !important;
+}
+
+.nav-listEd a:hover {
+    color: mediumseagreen;
+}
+
+.logo {
+    margin-right: auto; 
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .naba{
+    display: flex;
+    justify-content: flex-end;
+    background-color: red;
+  }
+    .menu-toggle {
+        display: block;
+        text-align: right;
+    }
+
+    .nav-listEd {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        
+    }
+    .nav-listEd li{
+        background-color: #eeeeee;
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        padding-left: 5%;
+    }
+
+    .nav-listEd.active {
+        display: flex;
+    }
+}
+.bi-list{
+    font-size: 32px !important;
+    color: #18ba60;
+    font-weight: bold !important;
+    font-family: Arial Black, serif
+}

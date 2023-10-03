@@ -1,0 +1,69 @@
+body{ position: relative; background-color: #ebebeb; }
+.row{
+    max-width: 100%;
+}
+.nav{ margin-bottom:30px; position: sticky; top: 00; z-index: 99999; background-color: #473d7b;color: white; } 
+nav{ margin-left: 2%; }
+ nav .nav-item{ margin-left: 100px; }
+.imgP{
+    height: 140px;
+    width: 140px;
+    border-radius: 100%;
+    background-image: url(img/mjims.png);
+    background-size: 100% 170%;
+    background-origin: t;
+    background-position-y: 65%;
+    background-position-x: 80%;
+    margin: auto;
+}
+.imgP:hover{
+    height: 143px;
+    width: 143px;
+    border: 1px solid red;
+}
+.ind-sect2{
+    margin-top: 30px;
+    text-align: center;
+}
+.ind2 h2{ text-align: center; } 
+#comp{ text-align: center; }
+.card{ margin:auto; margin-bottom: 30px; }
+.card-img-top{ height: 200px; transition: transform 2s; transform-origin: center; }
+img:hover{ transform: scale(1.05); }
+.card-body{height: 250px; }
+.card-text{ margin-top: 30px; }
+.cart-text a i{color:#664eda; }
+.cart-text a i:hover{color:blue}
+.cart{margin: auto; height: 230px; width:90%; background-color: #cae3a8; margin-bottom: 40px; text-align: center;padding-top: 15px; border-radius: 10px}
+.card-title{ text-align: center; color: #6a2fa4; } 
+.cart .cart-text{ margin-top: 30px; word-wrap: break-word; } 
+.cart .cart-text a{color: #6a2fa4; text-decoration: none; font-weight: bold; font-family: Times New Roman; } 
+.cont-sect2 .bi{ font-size: 50px; } .cont-sect2{ margin: auto;margin-top: 10vh; margin-bottom: 50px; } 
+.cont-sect1{     margin-top: 10px; height: 90px; text-align: center; }
+.hr{display: flex; justify-content: center; align-items: center; margin-bottom:30px; } 
+hr{ width: 130px; padding: 1px; color: red; opacity: 2; } 
+.hrc{ width:90px; padding: 1px; color: red; opacity: 2; } 
+.dem{ margin-left: 10px; } 
+.logo{text-align: right; padding-right: 00px; } 
+.log{ margin-top: 50px;padding-bottom: 45px; } 
+.col-md-4 .teck{ font-weight: bold; padding-left: 1px;} 
+.ind3{ margin-top: 30px; } 
+.txt{  } 
+/*dyn wr*/
+.ind1{ min-height: 50px;  	 text-align: center; color: #6a2fa4; font-weight: bold; }
+#dynamic-paragraph {position: relative; font-size: 17px; background-color:#ffff; padding:5px; border:1px solid #ded6d6; border-radius: 5px; border-right:2px solid black; border-bottom-right-radius: 0px; border-top-right-radius: 0px;} 
+#dynamic-paragraph::after{ content: "|"; color: red; position: absolute; right:0; animation: cursor-blink 0.7s infinite; font-size: 17px; } 
+@keyframes cursor-blink{ 0%{ opacity: 0; } 50%{ opacity: 1; } 100%{ opacity: 0; } }
+.partie-slid{ 
+	margin:auto; margin-bottom: 30px; 
+	opacity: 0;
+	transform: translateY(50px);
+	transition: opacity 1s, transform 1s;
+}
+.partie-slid.show{
+	opacity: 1;
+	transform: translateY(0);
+}
+.partie-slidX{
+    transform: translateX(50px);
+}
